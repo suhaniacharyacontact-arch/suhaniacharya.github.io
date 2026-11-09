@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name | Teacher and learning designer, Ahmedabad</title>
+<meta name="description" content="A teacher's portfolio: classroom work, learning design, and stories from Kalupur.">
+<meta property="og:title" content="Your Name | Teacher and learning designer">
+<meta property="og:description" content="Classroom work, learning design, and stories from Kalupur.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M20 95V45a30 30 0 0 1 60 0v50z' fill='%231D2760'/><circle cx='50' cy='55' r='8' fill='%23E8A920'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+
+<!--
+=====================================================================
+HOW TO EDIT THIS SITE (read once)
+1. Open this file in any text editor (Notepad, VS Code, TextEdit in plain-text mode).
+2. Search for "ph" spans: text inside <span class="ph">...</span> is placeholder. Replace it with your own words.
+3. While editing, placeholders glow yellow in the browser. When you are done, change
+   const DRAFT = true;   to   const DRAFT = false;   (near the bottom) to switch the glow off.
+4. Colours and fonts live in the :root block at the top of the <style> section.
+
+SAFEGUARDS BEFORE YOU PUBLISH
+- Use pseudonyms for every student. Change identifying details.
+- No student faces/videos unless you hold valid consent for a PUBLIC portfolio. When unsure, ask the AI Working Committee (AIWC).
+- No phone numbers, home addresses, personal emails, ID numbers, health details, or caste/religion information about anyone.
+- Share only anonymised, aggregated data (class averages, not named scores).
+- Tell your Program Manager / TFI team before you go public.
+=====================================================================
+-->
+
+<style>
+  :root {
+    --indigo: #1D2760;
+    --indigo-deep: #121A45;
+    --turmeric: #E8A920;
+    --madder: #A8322D;
+    --chalk: #F1F2EC;
+    --ink: #151A38;
+    --muted: #4B5175;
+    --line: #D3D6CB;
+    --head: "Bricolage Grotesque", "Trebuchet MS", system-ui, sans-serif;
+    --body: "Literata", Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+  body {
+    margin: 0; background: var(--chalk); color: var(--ink);
+    font-family: var(--body); font-size: 1.0625rem; line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--head); line-height: 1.1; margin: 0; letter-spacing: -0.015em; }
+  p { margin: 0 0 1.1em; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--turmeric); outline-offset: 3px; border-radius: 2px; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 1.25rem; }
+  .skip { position: absolute; left: -999px; top: 0; background: var(--turmeric); color: var(--ink); padding: .6rem 1rem; z-index: 100; }
+  .skip:focus { left: 0; }
+
+  /* Draft-mode highlighting of placeholder text */
+  body.draft .ph { background: rgba(232,169,32,.28); box-shadow: 0 0 0 2px rgba(232,169,32,.28); border-radius: 2px; }
+
+  /* Header */
+  header.top { position: sticky; top: 0; z-index: 50; background: var(--indigo-deep); color: var(--chalk); }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: .8rem; padding-bottom: .8rem; }
+  .brand { font-family: var(--head); font-weight: 800; text-decoration: none; font-size: 1.05rem; white-space: nowrap; }
+  nav { display: flex; gap: 1.2rem; overflow-x: auto; font-family: var(--head); font-weight: 500; font-size: .95rem; }
+  nav a { text-decoration: none; white-space: nowrap; padding: .2rem 0; border-bottom: 2px solid transparent; }
+  nav a:hover { border-color: var(--turmeric); }
+
+  /* Hero */
+  .hero { background: var(--indigo); color: var(--chalk); padding: 4.5rem 0 0; }
+  .hero h1 { font-weight: 800; font-size: clamp(2.3rem, 6.2vw, 4.4rem); max-width: 19ch; }
+  .hero .sub { max-width: 52ch; margin-top: 1.4rem; font-size: 1.15rem; color: #D9DCEF; }
+  .doors { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(.6rem, 3vw, 2.2rem); max-width: 760px; margin-top: 3.2rem; align-items: end; }
+  .door { display: block; text-decoration: none; text-align: center; }
+  .door svg { display: block; width: 100%; height: auto; transition: transform .35s ease; }
+  .door:hover svg, .door:focus-visible svg { transform: translateY(-8px); }
+  .door .inner { transition: opacity .35s ease; }
+  .door:hover .inner, .door:focus-visible .inner { opacity: .75; }
+  .door-label { display: block; font-family: var(--head); font-weight: 700; font-size: clamp(.9rem, 2.2vw, 1.15rem); padding: .9rem 0 1.4rem; }
+  .ground { height: 6px; background: var(--turmeric); }
+
+  /* Sections */
+  section { padding: 5rem 0; }
+  section.alt { background: #E6E8DE; }
+  .opener { font-size: clamp(1.8rem, 4.2vw, 2.9rem); font-weight: 800; max-width: 22ch; }
+  .intro { max-width: 58ch; margin-top: 1.2rem; color: var(--muted); }
+  .block { margin-top: 3rem; }
+
+  /* Classroom cases */
+  details.case { border-top: 1px solid var(--line); }
+  details.case:last-of-type { border-bottom: 1px solid var(--line); }
+  details.case summary { list-style: none; cursor: pointer; padding: 1.4rem 0; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  details.case summary::-webkit-details-marker { display: none; }
+  details.case summary h3 { font-size: clamp(1.25rem, 2.6vw, 1.6rem); }
+  details.case summary small { display: block; font-family: var(--body); font-size: .95rem; color: var(--muted); letter-spacing: 0; margin-top: .3rem; font-weight: 400; }
+  .toggle { font-family: var(--head); font-weight: 700; color: var(--madder); white-space: nowrap; }
+  details.case[open] .toggle::before { content: "Close"; }
+  details.case:not([open]) .toggle::before { content: "Read the case"; }
+  details.case[open] { border-left: 5px solid var(--turmeric); padding-left: 1.2rem; }
+  dl.case-body { display: grid; grid-template-columns: 1fr; gap: .2rem 2rem; margin: 0 0 2rem; max-width: 780px; }
+  dl.case-body dt { font-family: var(--head); font-weight: 700; color: var(--madder); margin-top: 1rem; }
+  dl.case-body dd { margin: 0; }
+  @media (min-width: 720px) {
+    dl.case-body { grid-template-columns: 11rem 1fr; }
+    dl.case-body dt { margin-top: 0; padding-top: .25rem; }
+    dl.case-body dd { margin-bottom: 1rem; }
+  }
+
+  /* Learning design */
+  .artefact { display: grid; grid-template-columns: 1fr; gap: 1.6rem 3rem; padding: 2.5rem 0; border-top: 1px solid var(--line); }
+  .artefact h3 { font-size: clamp(1.4rem, 3vw, 1.9rem); }
+  .artefact .meta { color: var(--muted); font-size: .95rem; margin-top: .6rem; }
+  .artefact h4 { font-family: var(--head); font-size: 1.05rem; margin: 1.6rem 0 .4rem; color: var(--madder); }
+  .artefact h4:first-child { margin-top: 0; }
+  .embed { border: 2px dashed var(--indigo); border-radius: 6px; min-height: 180px; display: grid; place-items: center; text-align: center; padding: 1.2rem; color: var(--muted); font-size: .95rem; margin-bottom: 1.4rem; }
+  .embed iframe { width: 100%; min-height: 360px; border: 0; }
+  ol.versions { list-style: none; padding: 0; margin: 0; counter-reset: v; }
+  ol.versions li { counter-increment: v; padding-left: 5.2rem; position: relative; margin-bottom: .9rem; }
+  ol.versions li::before { content: "Test " counter(v); position: absolute; left: 0; font-family: var(--head); font-weight: 700; color: var(--indigo); }
+  @media (min-width: 860px) { .artefact { grid-template-columns: 1fr 1.8fr; } }
+
+  /* Stories */
+  .story { border-top: 1px solid var(--line); }
+  .story:last-of-type { border-bottom: 1px solid var(--line); }
+  .story summary { list-style: none; cursor: pointer; padding: 1.6rem 0; }
+  .story summary::-webkit-details-marker { display: none; }
+  .story summary h3 { font-size: clamp(1.35rem, 3vw, 2rem); color: var(--indigo); }
+  .story summary p { margin: .5rem 0 0; color: var(--muted); max-width: 60ch; }
+  .story summary:hover h3 { color: var(--madder); }
+  .prose { max-width: 62ch; padding-bottom: 2.2rem; }
+  .prose p:first-child::first-line { font-weight: 600; }
+  .prose blockquote { margin: 1.6rem 0; padding-left: 1.2rem; border-left: 5px solid var(--turmeric); font-style: italic; font-size: 1.2rem; }
+  figure.place { margin: 1.6rem 0; }
+  figure.place img { width: 100%; height: auto; border-radius: 4px; display: block; }
+  figure.place figcaption { font-size: .9rem; color: var(--muted); margin-top: .5rem; }
+
+  /* About */
+  .about { display: grid; gap: 2.5rem; grid-template-columns: 1fr; }
+  @media (min-width: 860px) { .about { grid-template-columns: 1.4fr 1fr; } }
+  .btn { display: inline-block; font-family: var(--head); font-weight: 700; text-decoration: none; background: var(--indigo); color: var(--chalk); padding: .85rem 1.4rem; border-radius: 3px; margin: .4rem .6rem .4rem 0; border: 2px solid var(--indigo); }
+  .btn:hover { background: var(--turmeric); color: var(--ink); border-color: var(--turmeric); }
+  .btn.ghost { background: transparent; color: var(--indigo); }
+  .btn.ghost:hover { background: var(--indigo); color: var(--chalk); border-color: var(--indigo); }
+  .now { border-left: 5px solid var(--turmeric); padding: .2rem 0 .2rem 1.2rem; }
+  .now h3 { font-size: 1.2rem; margin-bottom: .4rem; }
+
+  footer { background: var(--indigo-deep); color: #C9CDE6; padding: 2.2rem 0; font-size: .92rem; }
+  footer p { margin: 0 0 .4rem; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .door svg, .door .inner { transition: none; }
+  }
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="ph">Your Name</span></a>
+    <nav aria-label="Main">
+      <a href="#classroom">Classroom</a>
+      <a href="#design">Learning design</a>
+      <a href="#kalupur">Kalupur</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HOME ============ -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <h1><span class="ph">I learned to design learning in the lanes of Kalupur, where every classroom problem is a design problem.</span></h1>
+    <p class="sub"><span class="ph">Teacher, Class [X], Kalupur, Ahmedabad. Building classrooms where children think out loud, argue kindly, and make things.</span></p>
+
+    <div class="doors" aria-label="The three parts of this portfolio">
+      <!-- Door 1: Classroom -->
+      <a class="door" href="#classroom">
+        <svg viewBox="0 0 200 260" role="img" aria-label="Arched door with a dotted lattice">
+          <defs>
+            <pattern id="p1" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="10" cy="10" r="3.4" fill="#E8A920"/>
+              <path d="M0 0L20 20M20 0L0 20" stroke="#E8A920" stroke-width=".5" opacity=".5"/>
+            </pattern>
+          </defs>
+          <path d="M1 260V100A99 99 0 0 1 199 100V260Z" fill="#121A45" stroke="#E8A920" stroke-width="2"/>
+          <path class="inner" d="M16 260V100A84 84 0 0 1 184 100V260Z" fill="url(#p1)"/>
+        </svg>
+        <span class="door-label">The classroom</span>
+      </a>
+      <!-- Door 2: Learning design -->
+      <a class="door" href="#design">
+        <svg viewBox="0 0 200 260" role="img" aria-label="Arched door with a diamond lattice">
+          <defs>
+            <pattern id="p2" width="26" height="26" patternUnits="userSpaceOnUse">
+              <path d="M13 2L24 13L13 24L2 13Z" fill="none" stroke="#E8A920" stroke-width="2"/>
+              <circle cx="13" cy="13" r="2" fill="#E8A920"/>
+            </pattern>
+          </defs>
+          <path d="M1 260V100A99 99 0 0 1 199 100V260Z" fill="#121A45" stroke="#E8A920" stroke-width="2"/>
+          <path class="inner" d="M16 260V100A84 84 0 0 1 184 100V260Z" fill="url(#p2)"/>
+        </svg>
+        <span class="door-label">The design desk</span>
+      </a>
+      <!-- Door 3: Kalupur -->
+      <a class="door" href="#kalupur">
+        <svg viewBox="0 0 200 260" role="img" aria-label="Arched door with a flower motif">
+          <defs>
+            <pattern id="p3" width="30" height="30" patternUnits="userSpaceOnUse">
+              <circle cx="15" cy="15" r="9" fill="none" stroke="#E8A920" stroke-width="2"/>
+              <circle cx="15" cy="15" r="3" fill="#E8A920"/>
+              <circle cx="0" cy="0" r="3" fill="#E8A920"/><circle cx="30" cy="0" r="3" fill="#E8A920"/>
+              <circle cx="0" cy="30" r="3" fill="#E8A920"/><circle cx="30" cy="30" r="3" fill="#E8A920"/>
+            </pattern>
+          </defs>
+          <path d="M1 260V100A99 99 0 0 1 199 100V260Z" fill="#121A45" stroke="#E8A920" stroke-width="2"/>
+          <path class="inner" d="M16 260V100A84 84 0 0 1 184 100V260Z" fill="url(#p3)"/>
+        </svg>
+        <span class="door-label">The lanes</span>
+      </a>
+    </div>
+  </div>
+  <div class="ground"></div>
+</div>
+
+<!-- ============ CLASSROOM ============ -->
+<section id="classroom">
+  <div class="wrap">
+    <h2 class="opener"><span class="ph">Four problems I noticed, what I tried, and what I got wrong.</span></h2>
+    <p class="intro"><span class="ph">One or two lines on your classroom: grade, number of children, subject, the context of your school. No names of children, no home details.</span></p>
+
+    <div class="block">
+      <details class="case" open>
+        <summary>
+          <div>
+            <h3><span class="ph">Case title: e.g., "Children could read, but could not say what it meant"</span></h3>
+            <small><span class="ph">Subject / Grade / Term</span></small>
+          </div>
+          <span class="toggle" aria-hidden="true"></span>
+        </summary>
+        <dl class="case-body">
+          <dt>The problem</dt>
+          <dd><span class="ph">What did you notice, and how did you know? One or two sentences.</span></dd>
+          <dt>What I tried</dt>
+          <dd><span class="ph">The specific action. What did you change in the classroom, and why this?</span></dd>
+          <dt>What happened</dt>
+          <dd><span class="ph">Evidence: anonymised data ("class average moved from X to Y"), a line from a student's work, a quote with a pseudonym ("Meera, 10, said...").</span></dd>
+          <dt>What I would change</dt>
+          <dd><span class="ph">An honest reflection. What did not work? What would you do differently next time?</span></dd>
+        </dl>
+      </details>
+
+      <details class="case">
+        <summary>
+          <div>
+            <h3><span class="ph">Case 2 title</span></h3>
+            <small><span class="ph">Subject / Grade / Term</span></small>
+          </div>
+          <span class="toggle" aria-hidden="true"></span>
+        </summary>
+        <dl class="case-body">
+          <dt>The problem</dt><dd><span class="ph">...</span></dd>
+          <dt>What I tried</dt><dd><span class="ph">...</span></dd>
+          <dt>What happened</dt><dd><span class="ph">...</span></dd>
+          <dt>What I would change</dt><dd><span class="ph">...</span></dd>
+        </dl>
+      </details>
+
+      <details class="case">
+        <summary>
+          <div>
+            <h3><span class="ph">Case 3 title</span></h3>
+            <small><span class="ph">Subject / Grade / Term</span></small>
+          </div>
+          <span class="toggle" aria-hidden="true"></span>
+        </summary>
+        <dl class="case-body">
+          <dt>The problem</dt><dd><span class="ph">...</span></dd>
+          <dt>What I tried</dt><dd><span class="ph">...</span></dd>
+          <dt>What happened</dt><dd><span class="ph">...</span></dd>
+          <dt>What I would change</dt><dd><span class="ph">...</span></dd>
+        </dl>
+      </details>
+      <!-- To add a case: copy a whole <details class="case"> ... </details> block and paste it below the last one. -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEARNING DESIGN ============ -->
+<section id="design" class="alt">
+  <div class="wrap">
+    <h2 class="opener"><span class="ph">I design for the child in front of me, then test it until it works.</span></h2>
+    <p class="intro"><span class="ph">Your approach in two lines: what you believe good learning design is, and any frameworks that shape you (backward design, UDL, play-based learning, etc.).</span></p>
+
+    <div class="block">
+      <article class="artefact">
+        <div>
+          <h3><span class="ph">Artefact name: e.g., "The Market Lane Maths Game"</span></h3>
+          <p class="meta"><span class="ph">Type (game / unit / rubric / worksheet), grade, subject, time to run</span></p>
+        </div>
+        <div>
+          <div class="embed">
+            <!-- To embed: replace this paragraph with an iframe, e.g.
+                 <iframe src="YOUR_CANVA_OR_DRIVE_EMBED_LINK" allowfullscreen></iframe>
+                 For Drive files, set sharing to "Anyone with the link: Viewer" first. Do not embed anything with student names. -->
+            <p class="ph">Embed or screenshot of your prototype here (Canva, Google Slides, or Drive PDF)</p>
+          </div>
+          <h4>The learning problem</h4>
+          <p><span class="ph">Who was the learner and what were they stuck on?</span></p>
+          <h4>My design choices, and why</h4>
+          <p><span class="ph">Two or three decisions, each with a reason. Name the principle behind them.</span></p>
+          <h4>How it changed</h4>
+          <ol class="versions">
+            <li><span class="ph">What you tried first and what you saw.</span></li>
+            <li><span class="ph">What you changed and what happened.</span></li>
+            <li><span class="ph">Where it stands now, and what is still unsolved.</span></li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="artefact">
+        <div>
+          <h3><span class="ph">Artefact 2 name</span></h3>
+          <p class="meta"><span class="ph">Type, grade, subject</span></p>
+        </div>
+        <div>
+          <div class="embed"><p class="ph">Embed or screenshot here</p></div>
+          <h4>The learning problem</h4>
+          <p><span class="ph">...</span></p>
+          <h4>My design choices, and why</h4>
+          <p><span class="ph">...</span></p>
+          <h4>How it changed</h4>
+          <ol class="versions">
+            <li><span class="ph">...</span></li>
+            <li><span class="ph">...</span></li>
+          </ol>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KALUPUR ============ -->
+<section id="kalupur">
+  <div class="wrap">
+    <h2 class="opener"><span class="ph">Stories from the lanes that changed how I teach.</span></h2>
+    <p class="intro"><span class="ph">One line on what these are. Names and details have been changed to protect the people in them.</span></p>
+
+    <div class="block">
+      <details class="story">
+        <summary>
+          <h3><span class="ph">Story title: e.g., "The Morning the Power Went Out"</span></h3>
+          <p><span class="ph">One-line hook that makes a reader want to open it.</span></p>
+        </summary>
+        <div class="prose">
+          <p><span class="ph">Begin inside one moment, not a summary. "Tuesday, 7:40 am. The power was out and the room smelled of rain." Use sound, smell and the walk to school. Let the children and families be people with their own plans, not problems to fix.</span></p>
+          <p><span class="ph">Middle: what happened, what you expected, what you got wrong.</span></p>
+          <blockquote><span class="ph">A line someone actually said, with a pseudonym.</span></blockquote>
+          <p><span class="ph">End: what shifted in you, and what you did differently afterward.</span></p>
+
+          <!-- Optional image of a PLACE (a doorway, a chalkboard, a lane). Remove the comment marks to use it.
+          <figure class="place">
+            <img src="images/lane.jpg" alt="Describe the picture in one sentence" loading="lazy">
+            <figcaption>A short caption.</figcaption>
+          </figure>
+          -->
+        </div>
+      </details>
+
+      <details class="story">
+        <summary>
+          <h3><span class="ph">Story 2 title</span></h3>
+          <p><span class="ph">One-line hook.</span></p>
+        </summary>
+        <div class="prose"><p><span class="ph">Story text...</span></p></div>
+      </details>
+
+      <details class="story">
+        <summary>
+          <h3><span class="ph">Story 3 title (a failure or something you got wrong works well here)</span></h3>
+          <p><span class="ph">One-line hook.</span></p>
+        </summary>
+        <div class="prose"><p><span class="ph">Story text...</span></p></div>
+      </details>
+      <!-- To add a story: copy a whole <details class="story"> ... </details> block. -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="alt">
+  <div class="wrap">
+    <h2 class="opener"><span class="ph">Why I teach, and what I am looking for next.</span></h2>
+    <div class="block about">
+      <div class="prose" style="padding-bottom:0">
+        <p><span class="ph">A short bio in three or four sentences: where you are from, why you teach, what you believe about children, what pulled you toward learning design.</span></p>
+        <p><span class="ph">One sentence on what you hope to do with this fellowship.</span></p>
+        <p>
+          <!-- Replace each # with your real link. Use a Google Form for messages so no personal email or phone is on the page. -->
+          <a class="btn" href="#" rel="noopener">Send me a message</a>
+          <a class="btn ghost" href="#" rel="noopener">LinkedIn</a>
+        </p>
+      </div>
+      <aside class="now">
+        <h3>Currently exploring</h3>
+        <p><span class="ph">One thing you are testing or reading this term. Update it every term.</span></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Names of students and families have been changed. Photographs and work are shared with consent.</p>
+    <p>&copy; <span id="yr"></span> <span class="ph">Your Name</span></p>
+  </div>
+</footer>
+
+<script>
+  // Set to false when you are finished editing, to switch off the yellow placeholder glow.
+  const DRAFT = true;
+  if (DRAFT) document.body.classList.add('draft');
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Open a story/case automatically if the link points at it (e.g. #kalupur).
+  // Close other cases when one opens, so the page stays tidy.
+  document.querySelectorAll('details.case').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open) document.querySelectorAll('details.case').forEach(function (o) { if (o !== d) o.open = false; });
+    });
+  });
+</script>
+</body>
+</html>
